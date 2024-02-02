@@ -15,8 +15,8 @@ def add_first_paragraph_to_leaders_data():
         for leader in scraper.leaders_data[country]:  # For each leader
             wikipedia_url = leader.get('wikipedia_url')  # Get the Wikipedia URL
             # Add the first paragraph of the leader's Wikipedia page to the leaders data
-            first_paragraph = scraper.get_first_paragraph(wikipedia_url)
-            leader['first_paragraph'] = first_paragraph
+            # first_paragraph = scraper.get_first_paragraph(wikipedia_url, birth_year)
+            # leader['first_paragraph'] = first_paragraph
     scraper.to_json_file('leaders_data.json')  # Save the leaders data to a JSON file
 
 add_first_paragraph_to_leaders_data()
