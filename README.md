@@ -30,12 +30,13 @@ python main.py
 3) The script will create a JSON file named leaders_data.json in the project directory. This file contains the data of the countries and their leaders, including the first paragraph of each leader's Wikipedia page.
 
 C) Visuals
-Here's an example of what the output JSON file might look like:
+Here's an example of what the output JSON file looks like:
 {
     "USA": [
         {
-            "name": "Joe Biden",
             "wikipedia_url": "https://en.wikipedia.org/wiki/Joe_Biden",
+            "first_name": "Joe",
+            "last_name": "Biden",
             "first_paragraph": "Joseph Robinette Biden Jr. (/ˈbaɪdən/ BY-dən; born November 20, 1942) is an American politician who is the 46th and current president of the United States. A member of the Democratic Party, he served as the 47th vice president from 2009 to 2017 under Barack Obama and represented Delaware in the United States Senate from 1973 to 2009."
         },
         ...
